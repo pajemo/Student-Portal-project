@@ -7,6 +7,10 @@
 storage/sessions/
 storage/sessions/*
 
+# Uploaded Documents
+storage/student-documents/
+storage/student-documents/*
+
 # OS Files
 .DS_Store
 Thumbs.db
