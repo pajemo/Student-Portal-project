@@ -1,0 +1,42 @@
+# Environment & Configuration
+.env
+.env.local
+.env.*.php
+
+# Session Files
+storage/sessions/
+storage/sessions/*
+
+# OS Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE & Editor Files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+logs/
+
+# Temporary Files
+Untitled-1.txt
+*.tmp
+
+# Node (if used for build tools)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# PHP Composer
+vendor/
+composer.lock
+
+# Database Dumps (keep schema.sql and seeds.sql, exclude data exports)
+*.sql.bak
+*.sql.dump

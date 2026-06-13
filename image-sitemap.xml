@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://knuststudents.com/</loc>
+    <image:image>
+      <image:loc>https://knuststudents.com/assets/images/logo-light.png</image:loc>
+      <image:title>University Logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://knuststudents.com/login.php</loc>
+    <image:image>
+      <image:loc>https://knuststudents.com/assets/images/aim.png</image:loc>
+      <image:title>Academic Info Manager Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://knuststudents.com/assets/images/logo-light.png</image:loc>
+      <image:title>University Logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://knuststudents.com/admin/login.php</loc>
+    <image:image>
+      <image:loc>https://knuststudents.com/assets/images/logo-light.png</image:loc>
+      <image:title>University Logo</image:title>
+    </image:image>
+  </url>
+</urlset>

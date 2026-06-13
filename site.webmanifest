@@ -1,0 +1,22 @@
+{
+  "name": "Student Result Portal",
+  "short_name": "Result Portal",
+  "description": "Student academic results and documents portal",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f7a4a",
+  "icons": [
+    {
+      "src": "assets/images/logo-light.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/logo-light.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

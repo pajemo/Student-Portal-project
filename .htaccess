@@ -1,0 +1,29 @@
+Options -Indexes
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Redirect legacy /public paths.
+RewriteRule ^public/(.*)$ /$1 [R=301,L]
+
+# Block direct access to internal folders.
+RewriteRule ^(src|templates|storage|database|asset)(/.*)?$ - [F,L,NC]
+
+# Block direct access to sensitive files.
+RewriteRule ^(\.env|\.env\.example|setup-db\.bat|README\.md|DEPLOYMENT\.md|composer\.json|composer\.lock|hash\.php)$ - [F,L,NC]
+
+# Keep login/logout routes explicit and stable.
+RewriteRule ^login/?$ login.php [L,QSA,NC]
+RewriteRule ^logout/?$ logout.php [L,QSA,NC]
+RewriteRule ^admin/login/?$ admin/login.php [L,QSA,NC]
+
+# Serve real files and directories as-is.
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Clean URLs: internally map extensionless paths to PHP files.
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+?)/?$ $1.php [L,QSA]
+</IfModule>

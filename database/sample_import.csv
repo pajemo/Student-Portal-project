@@ -1,0 +1,4 @@
+student_id,academic_year,semester,course_code,course_title,credit_hours,grade
+STU2026001,2025/2026,1,CS 320,Software Engineering,3,A
+STU2026001,2025/2026,1,CS 322,Operating Systems,3,B+
+STU2026002,2025/2026,1,CIV 205,Surveying,3,B
